@@ -1,0 +1,7 @@
+# Ignore compiled CSS files
+css/styles.css
+css/mediaqueries.css
+
+# Ignore CSS map files i
+css/mediaqueries.css.map
+css/styles.css.map
