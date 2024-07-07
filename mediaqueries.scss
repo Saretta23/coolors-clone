@@ -14,58 +14,66 @@
     }   
 }
 
-@media (min-width: 1500px) {
+$large-screen: 1500px;
 
+@mixin large-screen {
+    @media (min-width: $large-screen) {
+      @content;
+    }
+  }
+  
+  @include large-screen {
     .left-hero {
-        width: 68%;
+      width: 68%;
     }
-    .right-hero{
-        width: 1100px;
-        right: 55px;
+  
+    .right-hero {
+      width: 1100px;
+      right: 55px;
     }
-
-      #color-palette {
-        margin: 137px 109px;
+  
+    #color-palette {
+      margin: 137px 109px;
     }
-
+  
     .color-swatch {
-        min-height: 246px;
+      min-height: 246px;
     }
-
+  
     .laptop-screen {
-        margin-left: 109px;
-        margin-top: -44px;
-        min-height: 223px;
+      margin-left: 109px;
+      margin-top: -44px;
+      min-height: 223px;
     }
-
+  
     .keyboard {
-        margin-left: 107px;
+      margin-left: 107px;
     }
-
-   
+  
     .monitor {
-        max-width: 678px;
+      max-width: 678px;
     }
-
+  
     .stand {
-        margin-left: -132px;
+      margin-left: -132px;
     }
-
+  
     .stand-bottom {
-        margin-top: 34px;
-        margin-left: -105px;
+      margin-top: 34px;
+      margin-left: -105px;
     }
-
-    .inner-image{
-        min-height: 633px;
-        min-width: 657px;
-        margin-left: 13px;
+  
+    .inner-image {
+      min-height: 633px;
+      min-width: 657px;
+      margin-left: 13px;
     }
+  
     .plant {
-        top: -369px !important;
+      top: -369px !important;
     }
-
+  
     footer {
-        max-width: 2338px;
+      max-width: 2338px;
     }
-}
+  }
