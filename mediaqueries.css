@@ -1,14 +1,16 @@
-@media screen and (max-width: 768px) {
-  section.homepage p {
-    max-width: 400px;
+@media (max-width: 1500px) {
+  #color-palette {
+    margin: 161px 0;
   }
-  .left-hero {
-    width: 68%;
+  .stand-bottom {
+    top: 25px;
+    margin-left: -98px;
   }
-  .right-hero {
-    position: absolute;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
+  .stand {
+    margin-left: -123px;
+  }
+  .plant {
+    top: -370px !important;
   }
 }
 @media (min-width: 1500px) {
@@ -37,11 +39,11 @@
     max-width: 678px;
   }
   .stand {
-    margin-left: -132px;
+    margin-left: -84px;
   }
   .stand-bottom {
     margin-top: 34px;
-    margin-left: -105px;
+    margin-left: -60px;
   }
   .inner-image {
     min-height: 633px;
