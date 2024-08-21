@@ -1,18 +1,32 @@
-@media screen and (max-width: 768px) {
-    section.homepage p {
-        max-width: 400px;
-    }
+$medium-screen: 1500px;
 
-    .left-hero {
-        width: 68%;
-    }
-
-    .right-hero {
-        position: absolute;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
-    }   
+@mixin medium-screen {
+  @media (max-width: $medium-screen) {
+    @content;
+  }
 }
+
+@include medium-screen {
+  #color-palette {
+   margin: 161px 0;
+  }
+
+  .stand-bottom {
+    top: 25px;
+    margin-left: -98px;
+  }
+  
+  .stand {
+    margin-left: -123px;
+  }
+
+  .plant {
+    top: -370px !important;
+  }
+}
+
+
+
 
 $large-screen: 1500px;
 
@@ -55,12 +69,12 @@ $large-screen: 1500px;
     }
   
     .stand {
-      margin-left: -132px;
+      margin-left: -84px;
     }
   
     .stand-bottom {
       margin-top: 34px;
-      margin-left: -105px;
+      margin-left: -60px;
     }
   
     .inner-image {
